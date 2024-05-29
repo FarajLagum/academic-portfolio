@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=0.6in, right=0.6in, bottom=0.75in, top=0.75in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+\newcommand{\ignore}[1]{}
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+\ignore
+{
+\input{resume}
+}
+
+\clearpage
+\setlength\parindent{0cm}
+\pagenumbering{gobble} %cover letter should be one page, {gobble}=no page number
+
+
+% define variables
+
+%\def\youruniversity{Carleton University}
+
+\def\youruniversity{Toronto Metropolitan University}
+
+\def\yourfiled{Artificial Intelligence and Machine Learning Program}
+\def\collageaddress{Yeates School of Graduate Studies                 \\
+Faculty of Science \\
+1 Dundas St. West,  \\
+Toronto, ON	M5B 2K3
+}
+
+
+\def\lambtoncollageaddress{Department of International Education \\
+110 Hazel St., \\
+Ottawa, ON K1S 1C5}
+
+\begin{flushright}
+ \today                           \\
+ \vspace{1em}                              
+ Faraj Lagum, Ph.D            \\
+ 1301 Perez Crescent,                       \\
+ Ottawa, ON, K1J8T9   \\
+ Phone: +1 (613) 890-0126        \\
+\href{mailto:faraj.lagum@carleton.ca}{faraj.lagum@vosyn.ai}  \\ %insert your email address here for a clickable link
+\end{flushright}
+
+
+\begin{flushleft}
+ \textbf{Student Admissions Committee}         \\
+ \youruniversity 
+ 
+ 
+\collageaddress
+\end{flushleft}
+
+\vspace{2em}
+
+%Dear Chair of the Search Committee: \\
+Dear Members of the Admissions Committee: \\
+\vspace{0.5em}
+\onehalfspacing
+
+I am pleased to recommend Eamon for the MSc program in Computer Science at Toronto Metropolitan University. As a Technical Lead at Vosyn, Eamon demonstrated exceptional skills in management, product development, and scientific research.
+
+Eamon excelled in balancing product management with technical development, ensuring cohesion between short-term deliveries and long-term objectives. His ability to consider a project's technical and product aspects will undoubtedly enable him to undertake impactful research at your university.
+
+Eamon was adept at communicating the status of teams to non-technical stakeholders and translating complex ideas into understandable concepts. 
+Eamon's passion for learning and sharing knowledge was evident when he led a DevOps team to address a company-wide gap in AWS deployment experience. He also designed a distributed, serverless system to improve a machine-learning pipeline on AWS.
+
+Eamon was involved in developing almost every product at Vosyn, where he investigated the technical details and documented the key insights and findings. His deep knowledge and careful consideration ensured smooth development and saved the team from potential issues.
+
+Eamon also participated in several R\&D projects, such as developing a robust alternative to machine-learning voice-cloning implementations for real-time industry use and voice-matching based on gender and emotion. The results of these projects are ready to be submitted to the PrivateNLP conference. Eamon's passion for research and ability to derive impactful results were remarkable. He demonstrated the ability to apply academic knowledge to practical problems.
+%\vspace{1em}
+
+Eamon's commitment to learning, effective communication of complex technical concepts, and passion for research make him an ideal candidate for a thesis-based master's program at your university. I strongly recommend Eamon for your program.
+
+
+
+
+\vspace{2em}
+\begin{flushright}
+Sincerely, \\
+\ignore
+{
+\vspace{1em} 
+\includegraphics[scale=0.4]{Phillips} \\ %insert your own signature here
+}
+\vspace{1em} 
+Faraj Lagum, PhD \\
+CTO \& ML/AI Advisor at Vosyn \\
+\end{flushright}
+
+\end{document}
+
